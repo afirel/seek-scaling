@@ -12,10 +12,10 @@
 
 # TODO Make all of these proper command line parameters
 THREADS="1 2 4 8 12 16 24 32 48 96"
-GBSIZE=100
+GBSIZE=${GBSIZE:100}
 # If you name this "SECONDS" instead, sysbench changes it as the program runs; don't do that!
 SECS=300
-MODE=rndrd
+MODE=${MODE:"rndrd"}
 
 #
 # Cache flushing code only works as root
